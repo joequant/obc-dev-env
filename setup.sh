@@ -78,6 +78,11 @@ usermod -a -G docker vagrant # Add vagrant user to the docker group
 docker run --rm busybox echo All good
 
 # Install Python, pip, behave, nose
+#
+# install python-dev and libyaml-dev to get compiled speedups
+apt-get install --yes python-dev
+apt-get install --yes libyaml-dev
+
 apt-get install --yes python-setuptools
 apt-get install --yes python-pip
 pip install behave
