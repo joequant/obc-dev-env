@@ -125,3 +125,7 @@ sudo chown -R vagrant:vagrant $GOPATH
 
 # Update limits.conf to increase nofiles for RocksDB
 sudo cp /openchain/obc-dev-env/limits.conf /etc/security/limits.conf
+
+# Add profile to /etc/screenrc
+echo 'shell -$SHELL' | sudo tee -a /etc/screenrc > /dev/null
+
